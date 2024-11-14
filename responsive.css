@@ -16,9 +16,6 @@
     .mobile-menu {
       padding: 16px;
     }
-    .home-tab-selector-cards-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
     .home-max-width1 {
       flex-direction: column;
     }
@@ -99,11 +96,12 @@
     .button-md {
       text-align: center;
     }
-    .button-secondary {
-      text-align: center;
-      margin-right: 0px;
-      margin-bottom: 16px;
-    }
+    .button-primary, .button-secondary {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
     .button-secondary-white {
       text-align: center;
       margin-right: 0px;
@@ -152,3 +150,9 @@
       margin-bottom: 0px;
     }
   }
+  
+@media (min-width: 600px) {
+  .home-tab-selector-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
